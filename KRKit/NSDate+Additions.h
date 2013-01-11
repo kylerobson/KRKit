@@ -14,5 +14,6 @@
 - (NSString *)timeIntervalInWordsSinceDate:(NSDate *)aDate;
 - (NSString *)timeIntervalInWordsSinceNow;
 - (NSComparisonResult)compareDayMonthAndYear:(NSDate *)date;
+- (NSDate *)dateByAddingDays:(NSInteger)days;
 
 @end

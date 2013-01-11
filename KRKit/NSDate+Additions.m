@@ -143,4 +143,12 @@
     return [self compare:date];
 }
 
+- (NSDate *)dateByAddingDays:(NSInteger)days
+{
+    NSDateComponents *components = [[NSDateComponents alloc] init];
+    components.day = days;
+    NSCalendar *gregorianCalendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
+    return [gregorianCalendar dateByAddingComponents:components toDate:[NSDate date] options:0];
+}
+
 @end

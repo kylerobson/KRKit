@@ -1,0 +1,21 @@
+//
+// Prefix header for all source files of the 'KRKit' target in the 'KRKit' project
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+    #import <UIKit/UIKit.h>
+    #import "NSArray+Additions.h"
+    #import "NSData+Additions.h"
+    #import "NSDate+Additions.h"
+    #import "NSDictionary+Additions.h"
+    #import "NSFileManager+Additions.h"
+    #import "NSManagedObjectContext+Additions.h"
+    #import "NSMutableArray+Additions.h"
+    #import "NSString+Additions.h"
+    #import "NSUserDefaults+Additions.h"
+    #import "UIBarButtonItem+Additions.h"
+    #import "UIColor+Additions.h"
+    #import "UIDevice+Additions.h"
+    #import "UIView+Additions.h"
+#endif

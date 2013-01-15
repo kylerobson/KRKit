@@ -20,3 +20,4 @@
 #import "UIColor+KRAdditions.h"
 #import "UIDevice+KRAdditions.h"
 #import "UIView+KRAdditions.h"
+#import "CGGeometry+KRAdditions.h"

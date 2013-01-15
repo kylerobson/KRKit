@@ -76,3 +76,13 @@ CGRect CGRectCenterVerticallyInRect(CGRect containerRect, CGRect containedRect, 
     rect.origin.x = originX;
     return rect;
 }
+
+CGPoint CGPointAdd(CGPoint p1, CGPoint p2)
+{
+    return CGPointMake(p1.x + p2.x, p1.y + p2.y);
+}
+
+CGPoint CGPointSubtract(CGPoint p1, CGPoint p2)
+{
+    return CGPointMake(p1.x - p2.x, p1.y - p2.y);
+}

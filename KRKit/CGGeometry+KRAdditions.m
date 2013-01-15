@@ -86,3 +86,8 @@ CGPoint CGPointSubtract(CGPoint p1, CGPoint p2)
 {
     return CGPointMake(p1.x - p2.x, p1.y - p2.y);
 }
+
+CGRect CGRectShiftedByPoint(CGRect rect, CGPoint point)
+{
+    return (CGRect) { CGPointAdd(rect.origin, point), rect.size };
+}

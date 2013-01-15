@@ -18,3 +18,4 @@ CGRect CGRectCenterVerticallyInRect(CGRect containerRect, CGRect containedRect, 
 CGRect CGRectCenterHorizontallyInRect(CGRect containerRect, CGRect containedRect, CGFloat originY);
 CGPoint CGPointAdd(CGPoint p1, CGPoint p2);
 CGPoint CGPointSubtract(CGPoint p1, CGPoint p2);
+CGRect CGRectShiftedByPoint(CGRect rect, CGPoint point);

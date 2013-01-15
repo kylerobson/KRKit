@@ -1,16 +1,16 @@
 //
-//  NSData+Additions.m
+//  NSData+KRAdditions.m
 //  KRKit
 //
 //  Created by Kyle Robson on 1/11/13.
 //  Copyright (c) 2013 Robson Software Consulting. All rights reserved.
 //
 
-#import "NSData+Additions.h"
+#import "NSData+KRAdditions.h"
 
 static const char _base64EncodingTable[64] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/";
 
-@implementation NSData (Additions)
+@implementation NSData (KRAdditions)
 
 - (NSString *)hexadecimalString
 {

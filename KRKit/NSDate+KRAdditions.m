@@ -1,14 +1,14 @@
 //
-//  NSDate+Additions.m
+//  NSDate+KRAdditions.m
 //  KRKit
 //
 //  Created by Kyle Robson on 1/11/13.
 //  Copyright (c) 2013 Robson Software Consulting. All rights reserved.
 //
 
-#import "NSDate+Additions.h"
+#import "NSDate+KRAdditions.h"
 
-@implementation NSDate (Additions)
+@implementation NSDate (KRAdditions)
 
 + (NSDate *)dateWithNumberSince1970:(NSNumber *)number
 {

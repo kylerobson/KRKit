@@ -1,5 +1,5 @@
 //
-//  NSData+Additions.h
+//  NSData+KRAdditions.h
 //  KRKit
 //
 //  Created by Kyle Robson on 1/11/13.
@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface NSData (Additions)
+@interface NSData (KRAdditions)
 
 - (NSString *)hexadecimalString;
 - (NSString *)PNGDataURLRepresentation;

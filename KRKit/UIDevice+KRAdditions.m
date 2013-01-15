@@ -1,15 +1,15 @@
 //
-//  UIDevice+Additions.m
+//  UIDevice+KRAdditions.m
 //  KRKit
 //
 //  Created by Kyle Robson on 1/11/13.
 //  Copyright (c) 2013 Robson Software Consulting. All rights reserved.
 //
 
-#import "UIDevice+Additions.h"
+#import "UIDevice+KRAdditions.h"
 #import <sys/utsname.h>
 
-@implementation UIDevice (Additions)
+@implementation UIDevice (KRAdditions)
 
 @dynamic isIphone5Sized;
 @dynamic model;

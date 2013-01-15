@@ -1,5 +1,5 @@
 //
-//  NSArray+Additions.h
+//  NSArray+KRAdditions.h
 //  KRKit
 //
 //  Created by Kyle Robson on 1/11/13.
@@ -8,8 +8,9 @@
 
 #import <Foundation/Foundation.h>
 
-@interface NSArray (Additions)
+@interface NSArray (KRAdditions)
 
 - (NSArray *)objectsOfClass:(Class)aClass;
+- (NSArray *)reversedArray;
 
 @end

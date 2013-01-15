@@ -1,5 +1,5 @@
 //
-//  NSString+Additions.h
+//  NSString+KRAdditions.h
 //  KRKit
 //
 //  Created by Kyle Robson on 1/11/13.
@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface NSString (Additions)
+@interface NSString (KRAdditions)
 
 - (BOOL)hasUsefulLength;
 - (NSString *)trimmedString;

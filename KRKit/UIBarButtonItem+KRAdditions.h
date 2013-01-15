@@ -1,5 +1,5 @@
 //
-//  UIBarButtonItem+Additions.h
+//  UIBarButtonItem+KRAdditions.h
 //  KRKit
 //
 //  Created by Kyle Robson on 1/11/13.
@@ -8,7 +8,7 @@
 
 
 
-@interface UIBarButtonItem (Additions)
+@interface UIBarButtonItem (KRAdditions)
 
 + (UIBarButtonItem*)barItemWithImage:(UIImage*)image target:(id)target action:(SEL)action;
 

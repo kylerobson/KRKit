@@ -1,5 +1,5 @@
 //
-//  NSDate+Additions.h
+//  NSDate+KRAdditions.h
 //  KRKit
 //
 //  Created by Kyle Robson on 1/11/13.
@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface NSDate (Additions)
+@interface NSDate (KRAdditions)
 
 + (NSDate *)dateWithNumberSince1970:(NSNumber *)number;
 - (NSString *)timeIntervalInWordsSinceDate:(NSDate *)aDate;

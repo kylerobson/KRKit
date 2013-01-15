@@ -1,5 +1,5 @@
 //
-//  NSUserDefaults+Additions.h
+//  NSUserDefaults+KRAdditions.h
 //  KRKit
 //
 //  Created by Kyle Robson on 1/11/13.
@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface NSUserDefaults (Additions)
+@interface NSUserDefaults (KRAdditions)
 
 - (id)valueForKey:(NSString *)key defaulValue:(id)defaultValue;
 

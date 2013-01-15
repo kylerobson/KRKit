@@ -1,14 +1,14 @@
 //
-//  NSDictionary+Additions.m
+//  NSDictionary+KRAdditions.m
 //  KRKit
 //
 //  Created by Kyle Robson on 1/11/13.
 //  Copyright (c) 2013 Robson Software Consulting. All rights reserved.
 //
 
-#import "NSDictionary+Additions.h"
+#import "NSDictionary+KRAdditions.h"
 
-@implementation NSDictionary (Additions)
+@implementation NSDictionary (KRAdditions)
 
 - (void)setValue:(id)value withNilConvertedToNullForKey:(id)key
 {

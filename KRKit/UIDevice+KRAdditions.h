@@ -1,5 +1,5 @@
 //
-//  UIView+Additions.h
+//  UIDevice+KRAdditions.h
 //  KRKit
 //
 //  Created by Kyle Robson on 1/11/13.
@@ -8,9 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface UIView (Additions)
+@interface UIDevice (KRAdditions)
 
-- (NSArray *)allSubviews;
-- (void)removeAllSubviews;
+@property (nonatomic, assign) BOOL isIphone5Sized;
+@property (nonatomic, strong) NSString *model;
 
 @end

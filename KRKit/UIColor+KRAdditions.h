@@ -1,5 +1,5 @@
 //
-//  UIColor+Additions.h
+//  UIColor+KRAdditions.h
 //  KRKit
 //
 //  Created by Kyle Robson on 1/11/13.
@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface UIColor (Additions)
+@interface UIColor (KRAdditions)
 
 + (UIColor *)randomColor;
 - (CGFloat)componentAtIndex:(NSUInteger)index;

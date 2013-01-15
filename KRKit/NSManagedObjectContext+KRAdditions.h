@@ -1,5 +1,5 @@
 //
-//  NSManagedObjectContext+Additions.h
+//  NSManagedObjectContext+KRAdditions.h
 //  KRKit
 //
 //  Created by Kyle Robson on 1/11/13.
@@ -8,7 +8,7 @@
 
 #import <CoreData/CoreData.h>
 
-@interface NSManagedObjectContext (Additions)
+@interface NSManagedObjectContext (KRAdditions)
 
 - (NSUInteger)countForFetchRequest:(NSFetchRequest *)fetchRequest error:(void (^)(NSError *))error;
 

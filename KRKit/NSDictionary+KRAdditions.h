@@ -1,5 +1,5 @@
 //
-//  NSDictionary+Additions.h
+//  NSDictionary+KRAdditions.h
 //  KRKit
 //
 //  Created by Kyle Robson on 1/11/13.
@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface NSDictionary (Additions)
+@interface NSDictionary (KRAdditions)
 
 - (void)setValue:(id)value withNilConvertedToNullForKey:(id)key;
 - (id)valueWithNullConvertedToNilForKey:(NSString *)key;

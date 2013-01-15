@@ -1,14 +1,14 @@
 //
-//  NSFileManager+Additions.m
+//  NSFileManager+KRAdditions.m
 //  KRKit
 //
 //  Created by Kyle Robson on 1/11/13.
 //  Copyright (c) 2013 Robson Software Consulting. All rights reserved.
 //
 
-#import "NSFileManager+Additions.h"
+#import "NSFileManager+KRAdditions.h"
 
-@implementation NSFileManager (Additions)
+@implementation NSFileManager (KRAdditions)
 
 - (NSString *)fullPathForRelativePath:(NSString *)relativePath persistedLongTerm:(BOOL)isPersistedLongTerm
 {

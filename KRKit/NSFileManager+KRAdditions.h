@@ -1,5 +1,5 @@
 //
-//  NSFileManager+Additions.h
+//  NSFileManager+KRAdditions.h
 //  KRKit
 //
 //  Created by Kyle Robson on 1/11/13.
@@ -8,6 +8,6 @@
 
 #import <Foundation/Foundation.h>
 
-@interface NSFileManager (Additions)
+@interface NSFileManager (KRAdditions)
 
 @end

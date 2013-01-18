@@ -53,26 +53,37 @@ CGPoint CGPointFloor(CGPoint point)
     return CGPointMake(floorf(point.x), ceilf(point.y));
 }
 
+CGSize CGSizeFloor(CGSize size)
+{
+    return (CGSize) { floorf(size.width), floorf(size.height) };
+}
+
+CGRect CGRectFloor(CGRect rect)
+{
+    return (CGRect) { CGPointFloor(rect.origin), CGSizeFloor(rect.size) };
+}
+
 CGPoint CGRectCenterPoint(CGRect rect)
 {
-    return CGPointMake(CGRectGetMinX(rect) + (CGRectGetWidth(rect) / 2), CGRectGetMinY(rect) + (CGRectGetHeight(rect) / 2));
+    return CGPointMake(CGRectGetMinX(rect) + (CGRectGetWidth(rect) / 2.0f), CGRectGetMinY(rect) + (CGRectGetHeight(rect) / 2.0f));
 }
 
-CGRect CGRectCenterInRect(CGRect containerRect, CGRect containedRect)
+CGRect CGRectCenterAndFloor(CGRect containerRect, CGRect containedRect)
 {
-    return (CGRect) { CGRectCenterPoint(containedRect), containedRect.size };
+    CGPoint point = CGPointMake((containerRect.size.width - containedRect.size.width) / 2.0f, (containerRect.size.height - containedRect.size.height) / 2.0f);
+    return CGRectFloor((CGRect) { point, containedRect.size });
 }
 
-CGRect CGRectCenterHorizontallyInRect(CGRect containerRect, CGRect containedRect, CGFloat originY)
+CGRect CGRectCenterAndFloorHorizontally(CGRect containerRect, CGRect containedRect, CGFloat originY)
 {
-    CGRect rect = (CGRect) { CGRectCenterPoint(containedRect), containedRect.size };
+    CGRect rect = CGRectCenterAndFloor(containerRect, containedRect);
     rect.origin.y = originY;
     return rect;
 }
 
-CGRect CGRectCenterVerticallyInRect(CGRect containerRect, CGRect containedRect, CGFloat originX)
+CGRect CGRectCenterAndFloorVertically(CGRect containerRect, CGRect containedRect, CGFloat originX)
 {
-    CGRect rect = (CGRect) { CGRectCenterPoint(containedRect), containedRect.size };
+    CGRect rect = CGRectCenterAndFloor(containerRect, containedRect);
     rect.origin.x = originX;
     return rect;
 }

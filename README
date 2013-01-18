@@ -1,0 +1,19 @@
+Not all code here is well tested or tested at all. You have been warned.
+
+How to install
+
+In your project directory:
+
+git submodule add https://github.com/kylerobson/KRKit.git
+
+or just download the source and copy it into your project's directory
+
+Drag the KRKit project file as a child under your project. Place it wherever you feel appropriate.
+
+Adjust your project or target's settings:
+
+Other Linker Flags: add "-ObjC"
+Header Search Paths: add the path to KRKit, recursive... e.g. $(SRCROOT)/KRKit/**
+
+On your target, add libKRKit.a to the "Link Binary With Libraries" build phase under the "Build Phases" tab
+also on your target, add KRKit to the "Target Dependencies" build phase under the "Build Phases" tab (not sure if this is necessary)

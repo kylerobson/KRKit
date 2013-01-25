@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2753213216B2E52100BB97F2 /* UIImage+KRAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 2753213116B2E52100BB97F2 /* UIImage+KRAdditions.m */; };
 		27617CB016A60389001EC21C /* CGGeometry+KRAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 27617CAF16A60389001EC21C /* CGGeometry+KRAdditions.m */; };
 		27C873C316A066DE00F078D7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27C873C216A066DE00F078D7 /* Foundation.framework */; };
 		27C873C816A066DE00F078D7 /* KRKit.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 27C873C716A066DE00F078D7 /* KRKit.h */; };
@@ -39,6 +40,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		2753213016B2E52100BB97F2 /* UIImage+KRAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+KRAdditions.h"; sourceTree = "<group>"; };
+		2753213116B2E52100BB97F2 /* UIImage+KRAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+KRAdditions.m"; sourceTree = "<group>"; };
 		27617CAE16A60389001EC21C /* CGGeometry+KRAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CGGeometry+KRAdditions.h"; sourceTree = "<group>"; };
 		27617CAF16A60389001EC21C /* CGGeometry+KRAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CGGeometry+KRAdditions.m"; sourceTree = "<group>"; };
 		27C873BF16A066DE00F078D7 /* libKRKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libKRKit.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -91,6 +94,15 @@
 				27C873C716A066DE00F078D7 /* KRKit.h */,
 			);
 			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		2753212F16B2E51500BB97F2 /* UIImage */ = {
+			isa = PBXGroup;
+			children = (
+				2753213016B2E52100BB97F2 /* UIImage+KRAdditions.h */,
+				2753213116B2E52100BB97F2 /* UIImage+KRAdditions.m */,
+			);
+			name = UIImage;
 			sourceTree = "<group>";
 		};
 		27617CAD16A60340001EC21C /* CGGeometry */ = {
@@ -148,6 +160,7 @@
 		27C873D016A067D800F078D7 /* Categories */ = {
 			isa = PBXGroup;
 			children = (
+				2753212F16B2E51500BB97F2 /* UIImage */,
 				27617CAD16A60340001EC21C /* CGGeometry */,
 				27C8741516A06CE100F078D7 /* NSArray */,
 				27C8742916A06E9A00F078D7 /* NSData */,
@@ -348,6 +361,7 @@
 				27C8742C16A06EA600F078D7 /* NSData+KRAdditions.m in Sources */,
 				27C8743016A06F1000F078D7 /* UIDevice+KRAdditions.m in Sources */,
 				27617CB016A60389001EC21C /* CGGeometry+KRAdditions.m in Sources */,
+				2753213216B2E52100BB97F2 /* UIImage+KRAdditions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -10,8 +10,8 @@
 
 @interface UIImage (KRAdditions)
 
-- (UIImage *)imageWithContentsOfBundleFileNamed:(NSString *)name;
-- (UIImage *)imageWithContentsOfCachesFileNamed:(NSString *)name;
-- (UIImage *)imageWithContentsOfDocumentsFileNamed:(NSString *)name;
++ (UIImage *)imageWithContentsOfBundleFileNamed:(NSString *)name;
++ (UIImage *)imageWithContentsOfCachesFileNamed:(NSString *)name;
++ (UIImage *)imageWithContentsOfDocumentsFileNamed:(NSString *)name;
 
 @end

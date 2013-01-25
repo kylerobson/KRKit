@@ -10,17 +10,17 @@
 
 @implementation UIImage (KRAdditions)
 
-- (UIImage *)imageWithContentsOfBundleFileNamed:(NSString *)name
++ (UIImage *)imageWithContentsOfBundleFileNamed:(NSString *)name
 {
     return [UIImage imageWithContentsOfFile:[name stringByAppendingPathComponentToBundleDirectory]];
 }
 
-- (UIImage *)imageWithContentsOfCachesFileNamed:(NSString *)name
++ (UIImage *)imageWithContentsOfCachesFileNamed:(NSString *)name
 {
     return [UIImage imageWithContentsOfFile:[name stringByAppendingPathComponentToCachesDirectory]];
 }
 
-- (UIImage *)imageWithContentsOfDocumentsFileNamed:(NSString *)name
++ (UIImage *)imageWithContentsOfDocumentsFileNamed:(NSString *)name
 {
     return [UIImage imageWithContentsOfFile:[name stringByAppendingPathComponentToDocumentsDirectory]];
 }

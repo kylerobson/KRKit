@@ -25,5 +25,8 @@
 - (UIColor *)colorValue;
 - (BOOL)isEqualCaseInsensitiveToString:(NSString *)string;
 - (NSDictionary *)queryDictionary;
++ (void)stringWithContentsOfCachesFileNamed:(NSString *)name templateObject:(id)templateObject completion:(void (^)(NSString *stringFromFile))completion;
++ (void)stringWithContentsOfBundleFileNamed:(NSString *)name templateObject:(id)templateObject completion:(void (^)(NSString *stringFromFile))completion;
++ (void)stringWithContentsOfDocumentsFileNamed:(NSString *)name templateObject:(id)templateObject completion:(void (^)(NSString *stringFromFile))completion;
 
 @end

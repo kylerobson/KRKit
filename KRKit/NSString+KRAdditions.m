@@ -7,6 +7,7 @@
 //
 
 #import "NSString+KRAdditions.h"
+#import <GRMustache.h>
 
 @implementation NSString (KRAdditions)
 
@@ -121,6 +122,36 @@
         return [queryDictionary copy];
     }
     return nil;
+}
+
++ (void)stringWithContentsOfCachesFileNamed:(NSString *)name templateObject:(id)templateObject completion:(void (^)(NSString *stringFromFile))completion
+{
+    [self stringWithContentsOfFile:[name stringByAppendingPathComponentToCachesDirectory] templateObject:templateObject completion:completion];
+}
+
++ (void)stringWithContentsOfBundleFileNamed:(NSString *)name templateObject:(id)templateObject completion:(void (^)(NSString *stringFromFile))completion
+{
+    [self stringWithContentsOfFile:[name stringByAppendingPathComponentToBundleDirectory] templateObject:templateObject completion:completion];
+}
+
++ (void)stringWithContentsOfDocumentsFileNamed:(NSString *)name templateObject:(id)templateObject completion:(void (^)(NSString *stringFromFile))completion
+{
+    [self stringWithContentsOfFile:[name stringByAppendingPathComponentToDocumentsDirectory] templateObject:templateObject completion:completion];
+}
+
++ (void)stringWithContentsOfFile:(NSString *)name templateObject:(id)templateObject completion:(void (^)(NSString *stringFromFile))completion
+{
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+        NSString *string = [NSString stringWithContentsOfFile:name encoding:NSUTF8StringEncoding error:NULL];
+        if (templateObject != nil) {
+            string = [GRMustacheTemplate renderObject:templateObject fromString:string error:NULL];
+        }
+        if (completion != nil) {
+            dispatch_async(dispatch_get_main_queue(), ^{
+                completion(string);
+            });
+        }
+    });
 }
 
 @end

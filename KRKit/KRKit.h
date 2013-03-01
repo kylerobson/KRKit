@@ -22,3 +22,4 @@
 #import "UIView+KRAdditions.h"
 #import "CGGeometry+KRAdditions.h"
 #import "UIImage+KRAdditions.h"
+#import "UIViewController+KRAdditions.h"

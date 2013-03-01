@@ -10,6 +10,7 @@
 		2753213216B2E52100BB97F2 /* UIImage+KRAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 2753213116B2E52100BB97F2 /* UIImage+KRAdditions.m */; };
 		27617CB016A60389001EC21C /* CGGeometry+KRAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 27617CAF16A60389001EC21C /* CGGeometry+KRAdditions.m */; };
 		279C5B7C16B6D26300239B0C /* libGRMustache6-iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 279C5B7316B6D1FF00239B0C /* libGRMustache6-iOS.a */; };
+		27B2ABFE16E1493E009F7F5F /* UIViewController+KRAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B2ABFD16E1493E009F7F5F /* UIViewController+KRAdditions.m */; };
 		27C873C316A066DE00F078D7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27C873C216A066DE00F078D7 /* Foundation.framework */; };
 		27C873C816A066DE00F078D7 /* KRKit.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 27C873C716A066DE00F078D7 /* KRKit.h */; };
 		27C873FF16A0684E00F078D7 /* UIBarButtonItem+KRAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 27C873FE16A0684E00F078D7 /* UIBarButtonItem+KRAdditions.m */; };
@@ -91,6 +92,8 @@
 		27617CAE16A60389001EC21C /* CGGeometry+KRAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CGGeometry+KRAdditions.h"; sourceTree = "<group>"; };
 		27617CAF16A60389001EC21C /* CGGeometry+KRAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CGGeometry+KRAdditions.m"; sourceTree = "<group>"; };
 		279C5B6416B6D1FF00239B0C /* GRMustache.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = GRMustache.xcodeproj; path = GRMustache/src/GRMustache.xcodeproj; sourceTree = SOURCE_ROOT; };
+		27B2ABFC16E1493E009F7F5F /* UIViewController+KRAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+KRAdditions.h"; sourceTree = "<group>"; };
+		27B2ABFD16E1493E009F7F5F /* UIViewController+KRAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+KRAdditions.m"; sourceTree = "<group>"; };
 		27C873BF16A066DE00F078D7 /* libKRKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libKRKit.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		27C873C216A066DE00F078D7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		27C873C616A066DE00F078D7 /* KRKit-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "KRKit-Prefix.pch"; sourceTree = "<group>"; };
@@ -182,6 +185,15 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		27B2ABF716E14929009F7F5F /* UIViewController */ = {
+			isa = PBXGroup;
+			children = (
+				27B2ABFC16E1493E009F7F5F /* UIViewController+KRAdditions.h */,
+				27B2ABFD16E1493E009F7F5F /* UIViewController+KRAdditions.m */,
+			);
+			name = UIViewController;
+			sourceTree = "<group>";
+		};
 		27C873B616A066DE00F078D7 = {
 			isa = PBXGroup;
 			children = (
@@ -229,6 +241,7 @@
 		27C873D016A067D800F078D7 /* Categories */ = {
 			isa = PBXGroup;
 			children = (
+				27B2ABF716E14929009F7F5F /* UIViewController */,
 				2753212F16B2E51500BB97F2 /* UIImage */,
 				27617CAD16A60340001EC21C /* CGGeometry */,
 				27C8741516A06CE100F078D7 /* NSArray */,
@@ -476,6 +489,7 @@
 				27C8743016A06F1000F078D7 /* UIDevice+KRAdditions.m in Sources */,
 				27617CB016A60389001EC21C /* CGGeometry+KRAdditions.m in Sources */,
 				2753213216B2E52100BB97F2 /* UIImage+KRAdditions.m in Sources */,
+				27B2ABFE16E1493E009F7F5F /* UIViewController+KRAdditions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -531,8 +545,9 @@
 				GCC_WARN_UNUSED_PARAMETER = NO;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
-				ONLY_ACTIVE_ARCH = YES;
+				ONLY_ACTIVE_ARCH = NO;
 				SDKROOT = iphoneos;
+				VALID_ARCHS = "armv7 armv7s";
 			};
 			name = Debug;
 		};
@@ -572,6 +587,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
+				VALID_ARCHS = "armv7 armv7s";
 			};
 			name = Release;
 		};

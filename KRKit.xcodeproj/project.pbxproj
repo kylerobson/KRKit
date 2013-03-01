@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		2753213216B2E52100BB97F2 /* UIImage+KRAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 2753213116B2E52100BB97F2 /* UIImage+KRAdditions.m */; };
 		27617CB016A60389001EC21C /* CGGeometry+KRAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 27617CAF16A60389001EC21C /* CGGeometry+KRAdditions.m */; };
+		279C5B7C16B6D26300239B0C /* libGRMustache6-iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 279C5B7316B6D1FF00239B0C /* libGRMustache6-iOS.a */; };
+		27B2ABFE16E1493E009F7F5F /* UIViewController+KRAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B2ABFD16E1493E009F7F5F /* UIViewController+KRAdditions.m */; };
 		27C873C316A066DE00F078D7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27C873C216A066DE00F078D7 /* Foundation.framework */; };
 		27C873C816A066DE00F078D7 /* KRKit.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 27C873C716A066DE00F078D7 /* KRKit.h */; };
 		27C873FF16A0684E00F078D7 /* UIBarButtonItem+KRAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 27C873FE16A0684E00F078D7 /* UIBarButtonItem+KRAdditions.m */; };
@@ -25,6 +27,51 @@
 		27C8742C16A06EA600F078D7 /* NSData+KRAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 27C8742B16A06EA600F078D7 /* NSData+KRAdditions.m */; };
 		27C8743016A06F1000F078D7 /* UIDevice+KRAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 27C8742F16A06F1000F078D7 /* UIDevice+KRAdditions.m */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		279C5B6C16B6D1FF00239B0C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 279C5B6416B6D1FF00239B0C /* GRMustache.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 56DEC248152631040031E8DC;
+			remoteInfo = "GRMustache6-MacOS";
+		};
+		279C5B6E16B6D1FF00239B0C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 279C5B6416B6D1FF00239B0C /* GRMustache.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 56DEC255152631040031E8DC;
+			remoteInfo = "GRMustache6-MacOSTests";
+		};
+		279C5B7016B6D1FF00239B0C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 279C5B6416B6D1FF00239B0C /* GRMustache.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = ABAF86A516A0A65A001ADE96;
+			remoteInfo = "GRMustache6-MacOSTests-GC";
+		};
+		279C5B7216B6D1FF00239B0C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 279C5B6416B6D1FF00239B0C /* GRMustache.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 56DEC26E1526311B0031E8DC;
+			remoteInfo = "GRMustache6-iOS";
+		};
+		279C5B7416B6D1FF00239B0C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 279C5B6416B6D1FF00239B0C /* GRMustache.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 56DEC27B1526311C0031E8DC;
+			remoteInfo = "GRMustache6-iOSTests";
+		};
+		279C5B7A16B6D25E00239B0C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 279C5B6416B6D1FF00239B0C /* GRMustache.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 56DEC26D1526311B0031E8DC;
+			remoteInfo = "GRMustache6-iOS";
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		27C873BD16A066DE00F078D7 /* CopyFiles */ = {
@@ -44,6 +91,9 @@
 		2753213116B2E52100BB97F2 /* UIImage+KRAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+KRAdditions.m"; sourceTree = "<group>"; };
 		27617CAE16A60389001EC21C /* CGGeometry+KRAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CGGeometry+KRAdditions.h"; sourceTree = "<group>"; };
 		27617CAF16A60389001EC21C /* CGGeometry+KRAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CGGeometry+KRAdditions.m"; sourceTree = "<group>"; };
+		279C5B6416B6D1FF00239B0C /* GRMustache.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = GRMustache.xcodeproj; path = GRMustache/src/GRMustache.xcodeproj; sourceTree = SOURCE_ROOT; };
+		27B2ABFC16E1493E009F7F5F /* UIViewController+KRAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+KRAdditions.h"; sourceTree = "<group>"; };
+		27B2ABFD16E1493E009F7F5F /* UIViewController+KRAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+KRAdditions.m"; sourceTree = "<group>"; };
 		27C873BF16A066DE00F078D7 /* libKRKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libKRKit.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		27C873C216A066DE00F078D7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		27C873C616A066DE00F078D7 /* KRKit-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "KRKit-Prefix.pch"; sourceTree = "<group>"; };
@@ -81,6 +131,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				279C5B7C16B6D26300239B0C /* libGRMustache6-iOS.a in Frameworks */,
 				27C873C316A066DE00F078D7 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -114,6 +165,35 @@
 			name = CGGeometry;
 			sourceTree = "<group>";
 		};
+		279C5B6316B6D1DA00239B0C /* Externals */ = {
+			isa = PBXGroup;
+			children = (
+				279C5B6416B6D1FF00239B0C /* GRMustache.xcodeproj */,
+			);
+			name = Externals;
+			sourceTree = "<group>";
+		};
+		279C5B6516B6D1FF00239B0C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				279C5B6D16B6D1FF00239B0C /* libGRMustache6-MacOS.a */,
+				279C5B6F16B6D1FF00239B0C /* GRMustache6-MacOSTests.octest */,
+				279C5B7116B6D1FF00239B0C /* GRMustache6-MacOSTests-GC.octest */,
+				279C5B7316B6D1FF00239B0C /* libGRMustache6-iOS.a */,
+				279C5B7516B6D1FF00239B0C /* GRMustache6-iOSTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		27B2ABF716E14929009F7F5F /* UIViewController */ = {
+			isa = PBXGroup;
+			children = (
+				27B2ABFC16E1493E009F7F5F /* UIViewController+KRAdditions.h */,
+				27B2ABFD16E1493E009F7F5F /* UIViewController+KRAdditions.m */,
+			);
+			name = UIViewController;
+			sourceTree = "<group>";
+		};
 		27C873B616A066DE00F078D7 = {
 			isa = PBXGroup;
 			children = (
@@ -142,6 +222,7 @@
 		27C873C416A066DE00F078D7 /* KRKit */ = {
 			isa = PBXGroup;
 			children = (
+				279C5B6316B6D1DA00239B0C /* Externals */,
 				2744742F16A5FC3000FB2CFF /* Other Sources */,
 				27C873D016A067D800F078D7 /* Categories */,
 				27C873C516A066DE00F078D7 /* Supporting Files */,
@@ -160,6 +241,7 @@
 		27C873D016A067D800F078D7 /* Categories */ = {
 			isa = PBXGroup;
 			children = (
+				27B2ABF716E14929009F7F5F /* UIViewController */,
 				2753212F16B2E51500BB97F2 /* UIImage */,
 				27617CAD16A60340001EC21C /* CGGeometry */,
 				27C8741516A06CE100F078D7 /* NSArray */,
@@ -310,6 +392,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				279C5B7B16B6D25E00239B0C /* PBXTargetDependency */,
 			);
 			name = KRKit;
 			productName = KRKit;
@@ -335,12 +418,56 @@
 			mainGroup = 27C873B616A066DE00F078D7;
 			productRefGroup = 27C873C016A066DE00F078D7 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 279C5B6516B6D1FF00239B0C /* Products */;
+					ProjectRef = 279C5B6416B6D1FF00239B0C /* GRMustache.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				27C873BE16A066DE00F078D7 /* KRKit */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		279C5B6D16B6D1FF00239B0C /* libGRMustache6-MacOS.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libGRMustache6-MacOS.a";
+			remoteRef = 279C5B6C16B6D1FF00239B0C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		279C5B6F16B6D1FF00239B0C /* GRMustache6-MacOSTests.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "GRMustache6-MacOSTests.octest";
+			remoteRef = 279C5B6E16B6D1FF00239B0C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		279C5B7116B6D1FF00239B0C /* GRMustache6-MacOSTests-GC.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "GRMustache6-MacOSTests-GC.octest";
+			remoteRef = 279C5B7016B6D1FF00239B0C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		279C5B7316B6D1FF00239B0C /* libGRMustache6-iOS.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libGRMustache6-iOS.a";
+			remoteRef = 279C5B7216B6D1FF00239B0C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		279C5B7516B6D1FF00239B0C /* GRMustache6-iOSTests.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "GRMustache6-iOSTests.octest";
+			remoteRef = 279C5B7416B6D1FF00239B0C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXSourcesBuildPhase section */
 		27C873BB16A066DE00F078D7 /* Sources */ = {
@@ -362,10 +489,19 @@
 				27C8743016A06F1000F078D7 /* UIDevice+KRAdditions.m in Sources */,
 				27617CB016A60389001EC21C /* CGGeometry+KRAdditions.m in Sources */,
 				2753213216B2E52100BB97F2 /* UIImage+KRAdditions.m in Sources */,
+				27B2ABFE16E1493E009F7F5F /* UIViewController+KRAdditions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		279C5B7B16B6D25E00239B0C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "GRMustache6-iOS";
+			targetProxy = 279C5B7A16B6D25E00239B0C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		27C873CB16A066DE00F078D7 /* Debug */ = {
@@ -409,8 +545,9 @@
 				GCC_WARN_UNUSED_PARAMETER = NO;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
-				ONLY_ACTIVE_ARCH = YES;
+				ONLY_ACTIVE_ARCH = NO;
 				SDKROOT = iphoneos;
+				VALID_ARCHS = "armv7 armv7s";
 			};
 			name = Debug;
 		};
@@ -450,6 +587,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
+				VALID_ARCHS = "armv7 armv7s";
 			};
 			name = Release;
 		};
@@ -459,6 +597,7 @@
 				DSTROOT = /tmp/KRKit.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "KRKit/KRKit-Prefix.pch";
+				HEADER_SEARCH_PATHS = "$SRCROOT/GRMustache/**";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -471,6 +610,7 @@
 				DSTROOT = /tmp/KRKit.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "KRKit/KRKit-Prefix.pch";
+				HEADER_SEARCH_PATHS = "$SRCROOT/GRMustache/**";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;

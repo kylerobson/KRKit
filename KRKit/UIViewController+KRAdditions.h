@@ -11,6 +11,6 @@
 @interface UIViewController (KRAdditions)
 
 - (void)presentViewControllerPopup:(UIViewController *)viewController completion:(void (^)())completion;
-- (void)removeViewControllerPopup:(UIViewController *)viewController;
+- (void)dismissViewControllerPopup:(UIViewController *)viewController completion:(void (^)())completion;
 
 @end

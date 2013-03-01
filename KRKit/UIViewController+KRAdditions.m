@@ -36,7 +36,7 @@
     }];
 }
 
-- (void)removeViewControllerPopup:(UIViewController *)viewController
+- (void)dismissViewControllerPopup:(UIViewController *)viewController completion:(void (^)())completion
 {
     [viewController willMoveToParentViewController:nil];
     [UIView animateWithDuration:.25 animations:^{
@@ -46,6 +46,9 @@
             [viewController.view removeFromSuperview];
             viewController.view.transform = CGAffineTransformIdentity;
             [viewController removeFromParentViewController];
+            if (completion != nil) {
+                completion();
+            }
         }
     }];
 }

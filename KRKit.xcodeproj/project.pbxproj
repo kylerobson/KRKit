@@ -241,8 +241,6 @@
 		27C873D016A067D800F078D7 /* Categories */ = {
 			isa = PBXGroup;
 			children = (
-				27B2ABF716E14929009F7F5F /* UIViewController */,
-				2753212F16B2E51500BB97F2 /* UIImage */,
 				27617CAD16A60340001EC21C /* CGGeometry */,
 				27C8741516A06CE100F078D7 /* NSArray */,
 				27C8742916A06E9A00F078D7 /* NSData */,
@@ -256,7 +254,9 @@
 				27C8740316A068F700F078D7 /* UIBarButtonItem */,
 				27C8742116A06DF500F078D7 /* UIColor */,
 				27C8742D16A06ED800F078D7 /* UIDevice */,
+				2753212F16B2E51500BB97F2 /* UIImage */,
 				27C8742516A06E6400F078D7 /* UIView */,
+				27B2ABF716E14929009F7F5F /* UIViewController */,
 			);
 			name = Categories;
 			sourceTree = "<group>";

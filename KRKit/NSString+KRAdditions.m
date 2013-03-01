@@ -101,7 +101,7 @@
 
 - (BOOL)isEqualCaseInsensitiveToString:(NSString *)string
 {
-    return [self.lowercaseString isEqualToString:string.lowercaseString];
+    return [self.lowercaseString.trimmedString isEqualToString:string.lowercaseString.trimmedString];
 }
 
 - (NSDictionary *)queryDictionary

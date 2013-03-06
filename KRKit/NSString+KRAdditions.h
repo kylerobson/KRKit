@@ -20,6 +20,8 @@
 + (NSString *)bundleDirectory;
 + (NSString *)cachesDirectory;
 - (NSString *)stringByAppendingPathComponentToCachesDirectory;
++ (NSString *)temporaryDirectory;
+- (NSString *)stringByAppendingPathComponentToTemporaryDirectory;
 - (NSString *)stringByRemovingHTML;
 - (NSNumber *)intNumber;
 - (UIColor *)colorValue;

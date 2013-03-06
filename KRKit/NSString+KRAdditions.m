@@ -57,14 +57,24 @@
     return [[NSBundle mainBundle] resourcePath];
 }
 
+- (NSString *)stringByAppendingPathComponentToCachesDirectory
+{
+    return [[NSString cachesDirectory] stringByAppendingPathComponent:self];
+}
+
 + (NSString *)cachesDirectory
 {
     return [NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES) lastObject];
 }
 
-- (NSString *)stringByAppendingPathComponentToCachesDirectory
+- (NSString *)stringByAppendingPathComponentToTemporaryDirectory
 {
-    return [[NSString cachesDirectory] stringByAppendingPathComponent:self];
+    return [[NSString temporaryDirectory] stringByAppendingPathComponent:self];
+}
+
++ (NSString *)temporaryDirectory
+{
+    return NSTemporaryDirectory();
 }
 
 - (NSString *)stringByRemovingHTML

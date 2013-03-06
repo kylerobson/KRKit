@@ -31,5 +31,6 @@
 + (void)stringWithContentsOfBundleFileNamed:(NSString *)name templateObject:(id)templateObject completion:(void (^)(NSString *stringFromFile))completion;
 + (void)stringWithContentsOfDocumentsFileNamed:(NSString *)name templateObject:(id)templateObject completion:(void (^)(NSString *stringFromFile))completion;
 - (NSString *)md5;
+- (NSString *)fileMD5;
 
 @end

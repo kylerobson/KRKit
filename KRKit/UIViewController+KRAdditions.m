@@ -46,6 +46,7 @@
             [viewController.view removeFromSuperview];
             viewController.view.transform = CGAffineTransformIdentity;
             [viewController removeFromParentViewController];
+            [viewController didMoveToParentViewController:nil];
             if (completion != nil) {
                 completion();
             }

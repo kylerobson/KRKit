@@ -13,5 +13,6 @@
 + (UIImage *)imageWithContentsOfBundleFileNamed:(NSString *)name;
 + (UIImage *)imageWithContentsOfCachesFileNamed:(NSString *)name;
 + (UIImage *)imageWithContentsOfDocumentsFileNamed:(NSString *)name;
++ (UIImage *)drawImage:(UIImage*)fgImage inImage:(UIImage*)bgImage inPoint:(CGPoint)point;
 
 @end

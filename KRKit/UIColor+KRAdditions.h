@@ -16,5 +16,8 @@
 - (CGFloat)blueComponent;
 - (CGFloat)greenComponent;
 - (CGFloat)redComponent;
-
+- (UIColor *)colorByMultiplyingByRed:(CGFloat)red green:(CGFloat)green blue:(CGFloat)blue alpha:(CGFloat)alpha;
+- (UIColor *)colorByMultiplyingByRed:(CGFloat)red green:(CGFloat)green blue:(CGFloat)blue alpha:(CGFloat)alpha lowerLimit:(CGFloat)lowerLimit upperLimit:(CGFloat)upperLimit;
+- (BOOL)red:(CGFloat *)red green:(CGFloat *)green blue:(CGFloat *)blue alpha:(CGFloat *)alpha;
+- (CGColorSpaceModel)colorSpaceModel;
 @end

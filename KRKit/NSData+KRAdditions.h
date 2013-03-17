@@ -14,6 +14,7 @@
 - (NSString *)PNGDataURLRepresentation;
 - (NSString *)CSSDataURLRepresentation;
 - (NSString *)GIFDataURLRepresentation;
+- (NSString *)JPGDataURLRepresentation;
 - (NSString *)md5;
 
 @end

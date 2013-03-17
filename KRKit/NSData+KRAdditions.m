@@ -42,6 +42,11 @@ static const char _base64EncodingTable[64] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefgh
     return [@"data:text/css;base64," stringByAppendingString:self.base64EncodedString];
 }
 
+- (NSString *)JPGDataURLRepresentation
+{
+    return [@"data:image/jpg;base64," stringByAppendingString:self.base64EncodedString];
+}
+
 - (NSString *)base64EncodedString
 {
     const unsigned char * objRawData = [self bytes];

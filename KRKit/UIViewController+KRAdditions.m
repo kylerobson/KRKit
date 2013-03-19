@@ -15,6 +15,7 @@
     viewController.view.frame = CGRectWithSize(self.view.bounds.size);
     viewController.view.transform = CGAffineTransformScale(CGAffineTransformIdentity, 0.001, 0.001);
     
+    [viewController beginAppearanceTransition:YES animated:YES];
     [self addChildViewController:viewController];
     [self.view addSubview:viewController.view];
     [viewController didMoveToParentViewController:self];
@@ -27,6 +28,7 @@
         } completion:^(BOOL finished2) {
             [UIView animateWithDuration:0.3 / 2 animations:^{
                 viewController.view.transform = CGAffineTransformIdentity;
+                [viewController endAppearanceTransition];
                 if (completion != nil) {
                     completion();
                 }
@@ -37,6 +39,7 @@
 
 - (void)dismissViewControllerPopup:(UIViewController *)viewController completion:(void (^)())completion
 {
+    [viewController beginAppearanceTransition:NO animated:YES];
     [viewController willMoveToParentViewController:nil];
     [UIView animateWithDuration:.25 animations:^{
         viewController.view.transform = CGAffineTransformScale(CGAffineTransformIdentity, 0.001, 0.001);
@@ -45,6 +48,7 @@
             [viewController.view removeFromSuperview];
             viewController.view.transform = CGAffineTransformIdentity;
             [viewController removeFromParentViewController];
+            [viewController endAppearanceTransition];
             if (completion != nil) {
                 completion();
             }

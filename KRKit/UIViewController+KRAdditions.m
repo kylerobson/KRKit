@@ -15,7 +15,6 @@
     viewController.view.frame = CGRectWithSize(self.view.bounds.size);
     viewController.view.transform = CGAffineTransformScale(CGAffineTransformIdentity, 0.001, 0.001);
     
-    [viewController willMoveToParentViewController:self];
     [self addChildViewController:viewController];
     [self.view addSubview:viewController.view];
     [viewController didMoveToParentViewController:self];
@@ -46,7 +45,6 @@
             [viewController.view removeFromSuperview];
             viewController.view.transform = CGAffineTransformIdentity;
             [viewController removeFromParentViewController];
-            [viewController didMoveToParentViewController:nil];
             if (completion != nil) {
                 completion();
             }

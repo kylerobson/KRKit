@@ -155,6 +155,7 @@
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
         NSString *string = [NSString stringWithContentsOfFile:name encoding:NSUTF8StringEncoding error:NULL];
         if (templateObject != nil) {
+            [GRMustache preventNSUndefinedKeyExceptionAttack];
             string = [GRMustacheTemplate renderObject:templateObject fromString:string error:NULL];
         }
         if (completion != nil) {

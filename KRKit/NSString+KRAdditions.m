@@ -166,6 +166,28 @@
     });
 }
 
++ (NSString *)stringWithContentsOfCachesFileNamed:(NSString *)name templateObject:(id)templateObject
+{
+    [self stringWithContentsOfFile:[name stringByAppendingPathComponentToCachesDirectory] templateObject:templateObject];
+}
+
++ (NSString *)stringWithContentsOfBundleFileNamed:(NSString *)name templateObject:(id)templateObject
+{
+    [self stringWithContentsOfFile:[name stringByAppendingPathComponentToBundleDirectory] templateObject:templateObject];
+}
+
++ (NSString *)stringWithContentsOfDocumentsFileNamed:(NSString *)name templateObject:(id)templateObject
+{
+    [self stringWithContentsOfFile:[name stringByAppendingPathComponentToDocumentsDirectory] templateObject:templateObject];
+}
+
++ (NSString *)stringWithContentsOfFile:(NSString *)name templateObject:(id)templateObject
+{
+    NSString *string = [NSString stringWithContentsOfFile:name encoding:NSUTF8StringEncoding error:NULL];
+    [GRMustache preventNSUndefinedKeyExceptionAttack];
+    return [GRMustacheTemplate renderObject:templateObject fromString:string error:NULL];
+}
+
 - (NSString *)md5
 {
     const char *cStr = [self UTF8String];

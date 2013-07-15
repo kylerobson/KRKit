@@ -33,5 +33,9 @@
 - (NSString *)md5;
 - (NSString *)fileMD5;
 - (CGFloat)fontSizeWithFont:(UIFont *)font constrainedToSize:(CGSize)size minimumFontSize:(CGFloat)minimumFontSize;
++ (NSString *)stringWithContentsOfCachesFileNamed:(NSString *)name templateObject:(id)templateObject;
++ (NSString *)stringWithContentsOfBundleFileNamed:(NSString *)name templateObject:(id)templateObject;
++ (NSString *)stringWithContentsOfDocumentsFileNamed:(NSString *)name templateObject:(id)templateObject;
++ (NSString *)stringWithContentsOfFile:(NSString *)name templateObject:(id)templateObject;
 
 @end

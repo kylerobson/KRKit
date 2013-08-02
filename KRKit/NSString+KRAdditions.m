@@ -168,17 +168,17 @@
 
 + (NSString *)stringWithContentsOfCachesFileNamed:(NSString *)name templateObject:(id)templateObject
 {
-    [self stringWithContentsOfFile:[name stringByAppendingPathComponentToCachesDirectory] templateObject:templateObject];
+    return [self stringWithContentsOfFile:[name stringByAppendingPathComponentToCachesDirectory] templateObject:templateObject];
 }
 
 + (NSString *)stringWithContentsOfBundleFileNamed:(NSString *)name templateObject:(id)templateObject
 {
-    [self stringWithContentsOfFile:[name stringByAppendingPathComponentToBundleDirectory] templateObject:templateObject];
+    return [self stringWithContentsOfFile:[name stringByAppendingPathComponentToBundleDirectory] templateObject:templateObject];
 }
 
 + (NSString *)stringWithContentsOfDocumentsFileNamed:(NSString *)name templateObject:(id)templateObject
 {
-    [self stringWithContentsOfFile:[name stringByAppendingPathComponentToDocumentsDirectory] templateObject:templateObject];
+    return [self stringWithContentsOfFile:[name stringByAppendingPathComponentToDocumentsDirectory] templateObject:templateObject];
 }
 
 + (NSString *)stringWithContentsOfFile:(NSString *)name templateObject:(id)templateObject

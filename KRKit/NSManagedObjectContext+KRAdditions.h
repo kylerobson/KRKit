@@ -10,6 +10,6 @@
 
 @interface NSManagedObjectContext (KRAdditions)
 
-- (NSUInteger)countForFetchRequest:(NSFetchRequest *)fetchRequest error:(void (^)(NSError *))error;
+- (NSUInteger)countForFetchRequest:(NSFetchRequest *)fetchRequest error:(void (^)(NSError *))error something:(id)something;
 
 @end

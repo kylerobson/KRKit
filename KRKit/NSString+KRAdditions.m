@@ -236,26 +236,32 @@
 - (CGFloat)fontSizeWithFont:(UIFont *)font constrainedToSize:(CGSize)size minimumFontSize:(CGFloat)minimumFontSize
 {
     CGFloat fontSize = [font pointSize];
-    CGFloat height = [self sizeWithFont:font constrainedToSize:CGSizeMake(size.width,FLT_MAX) lineBreakMode:NSLineBreakByWordWrapping].height;
+    CGFloat height = [self boundingRectWithFont:font width:size.width].height;
     UIFont *newFont = font;
     
     //Reduce font size while too large, break if no height (empty string)
     while (height > size.height && height != 0 && fontSize > minimumFontSize) {
         fontSize--;
         newFont = [UIFont fontWithName:font.fontName size:fontSize];
-        height = [self sizeWithFont:newFont constrainedToSize:CGSizeMake(size.width,FLT_MAX) lineBreakMode:NSLineBreakByWordWrapping].height;
+        height = [self boundingRectWithFont:newFont width:size.width].height;
     };
     
     // Loop through words in string and resize to fit
     for (NSString *word in [self componentsSeparatedByCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]]) {
-        CGFloat width = [word sizeWithFont:newFont].width;
+        CGFloat width = [word boundingRectWithFont:newFont width:CGFLOAT_MAX].width;
         while (width > size.width && width != 0 && fontSize > minimumFontSize) {
             fontSize--;
             newFont = [UIFont fontWithName:font.fontName size:fontSize];
-            width = [word sizeWithFont:newFont].width;
+            width = [word boundingRectWithFont:newFont width:CGFLOAT_MAX].width;
         }
     }
     return fontSize;
+}
+
+- (CGSize)boundingRectWithFont:(UIFont *)font width:(CGFloat)width
+{
+    NSAttributedString *attributedText = [[NSAttributedString alloc] initWithString:self attributes:@{ NSFontAttributeName: font }];
+    return [attributedText boundingRectWithSize:CGSizeMake(width, CGFLOAT_MAX) options:NSStringDrawingUsesLineFragmentOrigin context:nil].size;
 }
 
 @end

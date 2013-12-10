@@ -37,6 +37,6 @@
 + (NSString *)stringWithContentsOfBundleFileNamed:(NSString *)name templateObject:(id)templateObject;
 + (NSString *)stringWithContentsOfDocumentsFileNamed:(NSString *)name templateObject:(id)templateObject;
 + (NSString *)stringWithContentsOfFile:(NSString *)name templateObject:(id)templateObject;
-- (CGSize)boundingRectWithFont:(UIFont *)font width:(CGFloat)width;
+- (CGSize)boundingSizeWithFont:(UIFont *)font width:(CGFloat)width;
 
 @end

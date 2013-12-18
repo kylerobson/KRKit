@@ -10,6 +10,25 @@
 
 @implementation UIViewController (KRAdditions)
 
+- (void)containerAddChildViewController:(UIViewController *)childViewController parentView:(UIView *)view
+{
+    [self addChildViewController:childViewController];
+    [view addSubview:childViewController.view];
+    [childViewController didMoveToParentViewController:self];
+}
+
+- (void)containerAddChildViewController:(UIViewController *)childViewController
+{
+    [self containerAddChildViewController:childViewController parentView:self.view];
+}
+
+- (void)containerRemoveChildViewController:(UIViewController *)childViewController
+{
+    [childViewController willMoveToParentViewController:nil];
+    [childViewController.view removeFromSuperview];
+    [childViewController removeFromParentViewController];
+}
+
 - (void)presentViewControllerPopup:(UIViewController *)viewController completion:(void (^)())completion
 {
     viewController.view.frame = CGRectWithSize(self.view.bounds.size);

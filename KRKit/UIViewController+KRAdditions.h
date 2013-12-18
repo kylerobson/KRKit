@@ -10,6 +10,9 @@
 
 @interface UIViewController (KRAdditions)
 
+- (void)containerAddChildViewController:(UIViewController *)childViewController parentView:(UIView *)view;
+- (void)containerAddChildViewController:(UIViewController *)childViewController;
+- (void)containerRemoveChildViewController:(UIViewController *)childViewController;
 - (void)presentViewControllerPopup:(UIViewController *)viewController completion:(void (^)())completion;
 - (void)dismissViewControllerPopup:(UIViewController *)viewController completion:(void (^)())completion;
 

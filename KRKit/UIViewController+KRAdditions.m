@@ -7,6 +7,7 @@
 //
 
 #import "UIViewController+KRAdditions.h"
+#import "KRKit.h"
 
 @implementation UIViewController (KRAdditions)
 

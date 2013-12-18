@@ -7,6 +7,7 @@
 //
 
 #import "NSUserDefaults+KRAdditions.h"
+#import "KRKit.h"
 
 @implementation NSUserDefaults (KRAdditions)
 

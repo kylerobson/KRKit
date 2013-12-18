@@ -7,6 +7,7 @@
 //
 
 #import "NSMutableArray+KRAdditions.h"
+#import "KRKit.h"
 
 @implementation NSMutableArray (KRAdditions)
 

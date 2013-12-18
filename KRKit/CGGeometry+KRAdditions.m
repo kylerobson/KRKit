@@ -7,6 +7,7 @@
 //
 
 #import "CGGeometry+KRAdditions.h"
+#import "KRKit.h"
 
 CGRect CGRectChop(CGRect rect, CGFloat amount, CGRectEdge edge)
 {

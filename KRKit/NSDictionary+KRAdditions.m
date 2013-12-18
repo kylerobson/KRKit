@@ -7,6 +7,7 @@
 //
 
 #import "NSDictionary+KRAdditions.h"
+#import "KRKit.h"
 
 @implementation NSDictionary (KRAdditions)
 

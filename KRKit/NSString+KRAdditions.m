@@ -9,6 +9,7 @@
 #import "NSString+KRAdditions.h"
 #import <GRMustache.h>
 #import <CommonCrypto/CommonDigest.h>
+#import "KRKit.h"
 
 @implementation NSString (KRAdditions)
 

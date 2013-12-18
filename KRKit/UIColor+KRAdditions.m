@@ -7,6 +7,7 @@
 //
 
 #import "UIColor+KRAdditions.h"
+#import "KRKit.h"
 
 @implementation UIColor (KRAdditions)
 

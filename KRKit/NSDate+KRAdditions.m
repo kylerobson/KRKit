@@ -7,6 +7,7 @@
 //
 
 #import "NSDate+KRAdditions.h"
+#import "KRKit.h"
 
 @implementation NSDate (KRAdditions)
 

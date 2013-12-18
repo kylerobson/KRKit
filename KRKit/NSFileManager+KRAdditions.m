@@ -7,6 +7,7 @@
 //
 
 #import "NSFileManager+KRAdditions.h"
+#import "KRKit.h"
 
 @implementation NSFileManager (KRAdditions)
 

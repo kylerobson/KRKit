@@ -7,15 +7,6 @@
 //
 
 #import <UIKit/UIKit.h>
-
-//
-//  CGGeometry+KRAdditions.m
-//  KRKit
-//
-//  Created by Kyle Robson on 1/15/13.
-//  Copyright (c) 2013 Robson Software Consulting. All rights reserved.
-//
-
 #import "CGGeometry+KRAdditions.h"
 
 CGRect CGRectChop(CGRect rect, CGFloat amount, CGRectEdge edge);

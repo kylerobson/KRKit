@@ -7,6 +7,7 @@
 //
 
 #import "UIBarButtonItem+KRAdditions.h"
+#import "KRKit.h"
 
 @implementation UIBarButtonItem (KRAdditions)
 

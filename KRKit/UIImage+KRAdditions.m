@@ -7,6 +7,7 @@
 //
 
 #import "UIImage+KRAdditions.h"
+#import "KRKit.h"
 
 @implementation UIImage (KRAdditions)
 

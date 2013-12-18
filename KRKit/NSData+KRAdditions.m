@@ -8,6 +8,7 @@
 
 #import "NSData+KRAdditions.h"
 #import <CommonCrypto/CommonDigest.h>
+#import "KRKit.h"
 
 static const char _base64EncodingTable[64] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/";
 

@@ -7,11 +7,12 @@
 //
 
 #import "UIView+KRAdditions.h"
+#import "KRKit.h"
 
 @implementation UIView (KRAdditions)
 
 - (CGPoint)origin
-{
+{   
     return self.frame.origin;
 }
 

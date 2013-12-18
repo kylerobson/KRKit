@@ -7,6 +7,7 @@
 //
 
 #import "NSManagedObjectContext+KRAdditions.h"
+#import "KRKit.h"
 
 @implementation NSManagedObjectContext (KRAdditions)
 

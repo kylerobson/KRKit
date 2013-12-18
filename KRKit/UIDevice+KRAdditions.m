@@ -8,6 +8,7 @@
 
 #import "UIDevice+KRAdditions.h"
 #import <sys/utsname.h>
+#import "KRKit.h"
 
 @implementation UIDevice (KRAdditions)
 

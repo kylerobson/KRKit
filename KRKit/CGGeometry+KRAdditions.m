@@ -103,3 +103,23 @@ CGRect CGRectShiftedByPoint(CGRect rect, CGPoint point)
 {
     return (CGRect) { CGPointAdd(rect.origin, point), rect.size };
 }
+
+CGRect CGRectCenterAndFloorSiblingVertically(CGRect siblingRect, CGRect rectToCenter)
+{
+    return CGRectFloor(CGRectMake(rectToCenter.origin.x, CGRectGetYForSiblingCentering(siblingRect, rectToCenter), rectToCenter.size.width, rectToCenter.size.height));
+}
+
+CGRect CGRectCenterAndFloorSiblingHorizontally(CGRect siblingRect, CGRect rectToCenter)
+{
+    return CGRectFloor(CGRectMake(CGRectGetXForSiblingCentering(siblingRect, rectToCenter), rectToCenter.origin.y, rectToCenter.size.width, rectToCenter.size.height));
+}
+
+CGFloat CGRectGetYForSiblingCentering(CGRect siblingRect, CGRect rectToCenter)
+{
+    return (siblingRect.origin.y + floorf((siblingRect.size.height - rectToCenter.size.height) / 2.0f));
+}
+
+CGFloat CGRectGetXForSiblingCentering(CGRect siblingRect, CGRect rectToCenter)
+{
+    return (siblingRect.origin.x + floorf((siblingRect.size.width - rectToCenter.size.width) / 2.0f));
+}

@@ -22,3 +22,5 @@ CGRect CGRectCenterAndFloorVertically(CGRect containerRect, CGRect containedRect
 CGPoint CGPointAdd(CGPoint p1, CGPoint p2);
 CGPoint CGPointSubtract(CGPoint p1, CGPoint p2);
 CGRect CGRectShiftedByPoint(CGRect rect, CGPoint point);
+CGFloat CGRectGetYForSiblingCentering(CGRect siblingRect, CGRect rectToCenter);
+CGFloat CGRectGetXForSiblingCentering(CGRect siblingRect, CGRect rectToCenter);

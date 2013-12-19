@@ -38,5 +38,7 @@
 + (NSString *)stringWithContentsOfDocumentsFileNamed:(NSString *)name templateObject:(id)templateObject;
 + (NSString *)stringWithContentsOfFile:(NSString *)name templateObject:(id)templateObject;
 - (CGSize)boundingSizeWithFont:(UIFont *)font width:(CGFloat)width;
+- (NSString *)base64EncodedString:(NSString *)plainText;
+- (NSString *)base64DecodedString:(NSString *)base64String;
 
 @end

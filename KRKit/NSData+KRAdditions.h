@@ -16,5 +16,7 @@
 - (NSString *)GIFDataURLRepresentation;
 - (NSString *)JPGDataURLRepresentation;
 - (NSString *)md5;
+- (NSString *)base64EncodedString;
++ (NSData *)dataFromBase64String:(NSString *)aString;
 
 @end

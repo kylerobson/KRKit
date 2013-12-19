@@ -265,16 +265,16 @@
     return [attributedText boundingRectWithSize:CGSizeMake(width, CGFLOAT_MAX) options:NSStringDrawingUsesLineFragmentOrigin|NSStringDrawingUsesFontLeading context:nil].size;
 }
 
-- (NSString *)base64EncodedString:(NSString *)plainText
+- (NSString *)base64EncodedString
 {
-    NSData *plainTextData = [plainText dataUsingEncoding:NSUTF8StringEncoding];
+    NSData *plainTextData = [self dataUsingEncoding:NSUTF8StringEncoding];
     NSString *base64String = [plainTextData base64EncodedString];
     return base64String;
 }
 
-- (NSString *)base64DecodedString:(NSString *)base64String
+- (NSString *)base64DecodedString
 {
-    NSData *plainTextData = [NSData dataFromBase64String:base64String];
+    NSData *plainTextData = [NSData dataFromBase64String:self];
     NSString *plainText = [[NSString alloc] initWithData:plainTextData encoding:NSUTF8StringEncoding];
     return plainText;
 }

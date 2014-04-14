@@ -261,8 +261,7 @@
 
 - (CGSize)boundingSizeWithFont:(UIFont *)font width:(CGFloat)width
 {
-    NSAttributedString *attributedText = [[NSAttributedString alloc] initWithString:self attributes:@{ NSFontAttributeName: font }];
-    return [attributedText boundingRectWithSize:CGSizeMake(width, CGFLOAT_MAX) options:NSStringDrawingUsesLineFragmentOrigin|NSStringDrawingUsesFontLeading context:nil].size;
+    return [self sizeWithFont:font constrainedToSize:CGSizeMake(width, CGFLOAT_MAX) lineBreakMode:NSLineBreakByWordWrapping];
 }
 
 - (NSString *)base64EncodedString

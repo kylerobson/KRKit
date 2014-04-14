@@ -33,7 +33,7 @@
 - (void)presentViewControllerPopup:(UIViewController *)viewController completion:(void (^)())completion
 {
     viewController.view.frame = CGRectWithSize(self.view.bounds.size);
-    viewController.view.transform = CGAffineTransformScale(CGAffineTransformIdentity, 0.001, 0.001);
+    viewController.view.transform = CGAffineTransformScale(CGAffineTransformIdentity, 0.001f, 0.001f);
     
     [viewController beginAppearanceTransition:YES animated:YES];
     [self addChildViewController:viewController];
@@ -41,10 +41,10 @@
     [viewController didMoveToParentViewController:self];
     
     [UIView animateWithDuration:0.3 / 1.5 animations:^{
-        viewController.view.transform = CGAffineTransformScale(CGAffineTransformIdentity, 1.1, 1.1);
+        viewController.view.transform = CGAffineTransformScale(CGAffineTransformIdentity, 1.1f, 1.1f);
     } completion:^(BOOL finished) {
         [UIView animateWithDuration:0.3 / 2 animations:^{
-            viewController.view.transform = CGAffineTransformScale(CGAffineTransformIdentity, 0.9, 0.9);
+            viewController.view.transform = CGAffineTransformScale(CGAffineTransformIdentity, 0.9f, 0.9f);
         } completion:^(BOOL finished2) {
             [UIView animateWithDuration:0.3 / 2 animations:^{
                 viewController.view.transform = CGAffineTransformIdentity;
@@ -62,7 +62,7 @@
     [viewController beginAppearanceTransition:NO animated:YES];
     [viewController willMoveToParentViewController:nil];
     [UIView animateWithDuration:.25 animations:^{
-        viewController.view.transform = CGAffineTransformScale(CGAffineTransformIdentity, 0.001, 0.001);
+        viewController.view.transform = CGAffineTransformScale(CGAffineTransformIdentity, 0.001f, 0.001f);
     } completion:^(BOOL finished) {
         if (finished) {
             [viewController.view removeFromSuperview];

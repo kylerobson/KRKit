@@ -10,7 +10,6 @@
 
 @interface NSMutableArray (KRAdditions)
 
-- (NSMutableArray *)objectsOfClass:(Class)aClass;
 - (void)reverse;
 
 @end

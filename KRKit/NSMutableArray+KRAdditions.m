@@ -11,12 +11,6 @@
 
 @implementation NSMutableArray (KRAdditions)
 
-- (NSMutableArray *)objectsOfClass:(Class)aClass
-{
-    NSArray *array = [self copy];
-    return [NSMutableArray arrayWithArray:[array objectsOfClass:aClass]];
-}
-
 - (void)reverse
 {
     if (self.count > 0) {
